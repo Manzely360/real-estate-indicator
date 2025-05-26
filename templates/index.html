@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Real Estate Questionnaire</title>
+  </head>
+  <body>
+    <h1>Real Estate Questionnaire</h1>
+    <form method="post">
+      <label>Name: <input type="text" name="name" required></label><br>
+      <label>Email: <input type="email" name="email" required></label><br>
+      <label>Phone: <input type="text" name="phone" required></label><br>
+      <label>Monthly Income: <input type="number" name="income" required></label><br>
+      <label>Purchasing Power: <input type="number" name="purchase_power" required></label><br>
+      <label>Willing to Invest per Month: <input type="number" name="invest_per_month" required></label><br>
+      <label>Intent:
+        <select name="intent">
+          <option value="invest">Invest</option>
+          <option value="enduser">End User</option>
+        </select>
+      </label><br>
+      <label>Preferred Area in Dubai:
+        <select name="area">
+          <option value="Downtown">Downtown</option>
+          <option value="Marina">Marina</option>
+          <option value="Palm Jumeirah">Palm Jumeirah</option>
+        </select>
+      </label><br>
+      <button type="submit">Get Recommendation</button>
+    </form>
+  </body>
+</html>
