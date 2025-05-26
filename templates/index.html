@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Real Estate ROI Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css">
+</head>
+<body>
+    <h1>Real Estate ROI Calculator</h1>
+    <form method="post">
+        <label>Purchase Price
+            <input type="number" step="0.01" name="purchase_price" required>
+        </label>
+        <label>Renovation Cost
+            <input type="number" step="0.01" name="renovation_cost" required>
+        </label>
+        <label>Annual Rent
+            <input type="number" step="0.01" name="annual_rent" required>
+        </label>
+        <label>Annual Expenses
+            <input type="number" step="0.01" name="annual_expenses" required>
+        </label>
+        <button type="submit">Calculate ROI</button>
+    </form>
+    {% if roi is not none %}
+        <h2>ROI: {{ roi }}%</h2>
+    {% endif %}
+</body>
+</html>
